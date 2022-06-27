@@ -30,3 +30,25 @@ modClose.forEach((mc) =>{
         })
     })
 })
+
+
+// MIXITUP SCRIPTING
+
+let mixerPortfolio = mixitup(ʻ.work-containerʻ, {
+    selectors: {
+        target: '.work-card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+
+const linkWork = document.querySelectorAll(ʻ.work-itemʻ)
+
+function activeWork(){
+    linkWork.forEach(L=> l.classList.remove(ʻactive-workʻ))
+    this.classList.add(ʻactive-workʻ)
+}
+
+linkWork.forEach(L=> l.addEventListener(ʻclickʻ, activeWork))
