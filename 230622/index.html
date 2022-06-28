@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juadebfm</title>
     <!-- SWIPER CSS LINKED BELOW -->
-    <link rel="stylesheet" href="/230622/CSS/swiper-bundle.min.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <!-- LINK CSS FILE BELOW -->
     <link rel="stylesheet" href="/230622/CSS/style.css">
     <!-- SHORTCUT ICON LINK -->
@@ -61,6 +64,8 @@
 </header>
 <!-- MAIN SECTION MARKUP STARTS BELOW -->
 <main class="main">
+
+    <!-- HOME SECTION -->
     <section class="home section" id="home">
         <div class="home-container container grid">
             <div class="home-content">
@@ -98,7 +103,6 @@
             </a>
         </div>
     </section>
-
     <!-- ABOUT ME SECTION -->
     <section class="about section" id="about">
         <span class="section-subtitle">Introduction</span>
@@ -145,8 +149,7 @@
             </div>
         </div>
     </section>  
-    
-      <!--Skills Section-->
+    <!--Skills Section-->
       <section class="skills section" id="skills">
         <span class="section-subtitle">My Stack</span>
         <h2 class="section-title">Experience</h2>
@@ -302,9 +305,9 @@
             </div>
         </div>
       </section>
-
-      <!-- SERVICES OFFERED -->
-      <span class="section-subtitle"></span>
+    <!-- SERVICES OFFERED -->
+      <section class="services section">
+      <span class="section-subtitle">My Services</span>
       <h2 class="section-title">
         Services Offered
       </h2>
@@ -315,14 +318,14 @@
             <h3 class="services-title">Web <br> Design</h3>
 
             <span class="services-button">
-                See More <i class='bx bxs-right-arrow-circle service-icon'></i>
+                See More <i class='bx bxs-right-arrow-circle services-icon'></i>
             </span>
 
             <div class="services-mod">
                 <div class="services-mod-content">
                     <i class='bx bx-checkbox-square services-mod-close' ></i>
 
-                    <h3 class="services-modal-title">Web Dev</h3>
+                    <h3 class="services-mod-title">Web Dev</h3>
                     <p class="services-mod-info">Responsive Web design using easily maintainable framworks</p>
                     
                     <ul class="services-mod-list">
@@ -364,14 +367,14 @@
             <h3 class="services-title">Web Dev <br> Support</h3>
 
             <span class="services-button">
-                See More <i class='bx bxs-right-arrow-circle service-icon'></i>
+                See More <i class='bx bxs-right-arrow-circle services-icon'></i>
             </span>
 
             <div class="services-mod">
                 <div class="services-mod-content">
                     <i class='bx bx-checkbox-square services-mod-close' ></i>
 
-                    <h3 class="services-modal-title">Web Dev</h3>
+                    <h3 class="services-mod-title">Web Dev</h3>
                     <p class="services-mod-info">Responsive Web design using easily maintainable framworks</p>
                     
                     <ul class="services-mod-list">
@@ -413,14 +416,14 @@
             <h3 class="services-title">Music/Sound <br> Engineering</h3>
 
             <span class="services-button">
-                See More <i class='bx bxs-right-arrow-circle service-icon'></i>
+                See More <i class='bx bxs-right-arrow-circle services-icon'></i>
             </span>
 
             <div class="services-mod">
                 <div class="services-mod-content">
                     <i class='bx bx-checkbox-square services-mod-close' ></i>
 
-                    <h3 class="services-modal-title">Web Dev</h3>
+                    <h3 class="services-mod-title">Web Dev</h3>
                     <p class="services-mod-info">Responsive Web design using easily maintainable framworks</p>
                     
                     <ul class="services-mod-list">
@@ -459,17 +462,17 @@
         </div>
 
       </div>
-
-      <!-- WORK SECTION -->
+      </section>
+    <!-- WORK SECTION -->
       <section class="work section" id="work">
         <span class="section-subtitle">My Portfolio</span>
         <h2 class="section-title">Recent Works</h2>
 
-        <div class="work-fillers">
-            <span class="work-item active-work" data-filter="all">All</span>
-            <span class="work-item" data-filter="web">Web</span>
-            <span class="work-item" data-filter="mobile">Mobile</span>
-            <span class="work-item" data-filter="design">Design</span>
+        <div class="work-filters">
+            <span class="work-item active-work" data-filter=ʻallʻ >All</span>
+            <span class="work-item" data-filter=ʻ.webʻ>Web</span>
+            <span class="work-item" data-filter=ʻ.movilʻ>Movil</span>
+            <span class="work-item" data-filter=ʻ.designʻ>Design</span>
         </div>
 
         <div class="work-container container grid">
@@ -484,7 +487,7 @@
                 </a>
             </div>
 
-            <div class="work-card mix mobile">
+            <div class="work-card mix movil">
                 <img src="/230622/img/new1.png" alt="" class="work-img">
 
                 <h3 class="work-title">App Dev</h3>
@@ -514,7 +517,7 @@
                 </a>
             </div>
 
-            <div class="work-card mix mobile">
+            <div class="work-card mix movil">
                 <img src="/230622/img/new1.png" alt="" class="work-img">
 
                 <h3 class="work-title">Software Dev</h3>
@@ -526,8 +529,7 @@
 
         </div>
       </section>
-
-
+<!-- TESTIMONIALS SECTION -->
       <section class="testimonial section">
         <span class="section-subtitle">Client Reviews</span>
         <h2 class="section-title">Testimonials</h2>
@@ -536,27 +538,24 @@
             <div class="swiper-wrapper">
 
                 <div class="testimonial-card swiper-slide">
-                    <img src="/230622/img/testimonial3.jpg" alt="" class="testimonial-img">
-
-                    <h3 class="testimonial-name">Oluwafemi</h3>
-                    <p class="testimonial-description">Good eye for designs. Cool dude and easy to work with. Responsive and scalable designs that helps integration and deployment</p>
-                </div>
-
-                <div class="testimonial-card swiper-slide">
                     <img src="/230622/img/testimonial1.jpg" alt="" class="testimonial-img">
-
-                    <h3 class="testimonial-name">Oluwafemi</h3>
-                    <p class="testimonial-description">Good eye for designs. Cool dude and easy to work with. Responsive and scalable designs that helps integration and deployment</p>
+                    <h3 class="testimonial-name">Juadeb</h3>
+                    <p class="testimonial-info">Good web designers, all aspects of the projects were followed through and well implemented with the perfect end products in mind.</p>
                 </div>
 
                 <div class="testimonial-card swiper-slide">
                     <img src="/230622/img/testimonial2.jpg" alt="" class="testimonial-img">
-
-                    <h3 class="testimonial-name">Oluwafemi</h3>
-                    <p class="testimonial-description">Good eye for designs. Cool dude and easy to work with. Responsive and scalable designs that helps integration and deployment</p>
+                    <h3 class="testimonial-name">Judeb</h3>
+                    <p class="testimonial-info">Good web designers, all aspects of the projects were followed through and well implemented with the perfect end products in mind.</p>
                 </div>
-                
+
+                <div class="testimonial-card swiper-slide">
+                    <img src="/230622/img/testimonial3.jpg" alt="" class="testimonial-img">
+                    <h3 class="testimonial-name">Juad</h3>
+                    <p class="testimonial-info">Good web designers, all aspects of the projects were followed through and well implemented with the perfect end products in mind.</p>
+                </div>
             </div>
+            
             <div class="swiper-pagination"></div>
         </div>
       </section>
@@ -565,7 +564,8 @@
 
 
 <!-- SWIPER JS SCRIPT LINK BELOW -->
-<script src="/230622/Js/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 <!-- LINK MAIN JAVASCRIPT FILE HERE-->
 <script src="/230622/Js/app.js"></script>
 <!-- MIXITUP FROM KUNKALABS LINKING BELOW -->

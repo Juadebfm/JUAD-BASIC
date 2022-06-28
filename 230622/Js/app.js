@@ -9,6 +9,7 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 // Services Mod Hide And Unhide Toggle
+
 const modViews = document.querySelectorAll('.services-mod'),
       modBtns = document.querySelectorAll('.services-button'),
       modClose = document.querySelectorAll('.services-mod-close')
@@ -34,24 +35,24 @@ modClose.forEach((mc) =>{
 
 // MIXITUP SCRIPTING
 
-let mixerPortfolio = mixitup(ʻ.work-containerʻ, {
-    selectors: {
-        target: '.work-card'
-    },
-    animation: {
-        duration: 300
-    }
-});
+// var mixerPortfolio = mixitup(ʻ.work-containerʻ, {
+//     selectors: {
+//         target: '.work-card'
+//     },
+//     animation: {
+//         duration: 300
+//     }
+// });
 
 // ACTIVE LINK
-const linkWork = document.querySelectorAll(ʻ.work-itemʻ)
+// const linkWork = document.querySelectorAll(ʻ.work-itemʻ)
 
-function activeWork(){
-    linkWork.forEach(L=> l.classList.remove(ʻactive-workʻ))
-    this.classList.add(ʻactive-workʻ)
-}
+// function activeWork(){
+//     linkWork.forEach(l=> l.classList.remove(ʻactive-workʻ))
+//     this.classList.add(ʻactive-workʻ)
+// }
 
-linkWork.forEach(L=> l.addEventListener(ʻclickʻ, activeWork))
+// linkWork.forEach(l=> l.addEventListener(ʻclick, active-workʻ))
 
 
 // SWIPER PAGINATION

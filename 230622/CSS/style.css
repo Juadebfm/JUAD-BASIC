@@ -55,7 +55,7 @@ body{
 }
 
 body{
-  cursor: pointer;
+  /* cursor: pointer; */
   border: none;
 }
 
@@ -499,6 +499,7 @@ purple: hsl(174, 63%, 62%) */
   font: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 18px;
+  /* border-radius: 12rem; */
 }
 
 .skills-level{
@@ -507,6 +508,7 @@ purple: hsl(174, 63%, 62%) */
 }
 
 /* SERVICES STYLING */
+
 .services-container{
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -534,11 +536,11 @@ purple: hsl(174, 63%, 62%) */
   cursor: pointer;
 }
 
-.services-button:hover .service-icon{
+.services-button:hover .services-icon{
   transform: translateX(.75rem);
 }
 
-.service-icon{
+.services-icon{
   font-size: 1.2rem;
   padding: .2rem;
   transition: .4s;
@@ -549,7 +551,7 @@ purple: hsl(174, 63%, 62%) */
 .services-mod{
   position: fixed;
   inset: 0;
-  background-color: hsla(var(--second-hue), 28%, 16%, .7);
+  background-color: hsla(var(--final-hue), 28%, 16%, .7);
   padding: 2rem 1rem;
   display: grid;
   place-items: center;
@@ -565,7 +567,7 @@ purple: hsl(174, 63%, 62%) */
   position: relative;
   background-color: var(--body-color);
   padding: 4.5rem 1.5rem 2.5rem;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
 }
 .services-mod-title, .services-mod-info{
   text-align: center;
@@ -603,7 +605,8 @@ purple: hsl(174, 63%, 62%) */
 }
 
 .services-mod-info{
-  font-size: var(--first-color);
+  font-size: var(--small-font-size);
+  color: var(--first-color-alt);
 }
 
 .services-mod-close{
@@ -627,7 +630,7 @@ purple: hsl(174, 63%, 62%) */
   padding-top: 1rem;
 }
 
-.work-fillers{
+.work-filters{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -671,7 +674,7 @@ purple: hsl(174, 63%, 62%) */
   column-gap: .25rem;
 }
 
-.work-button:hover{
+.work-button:hover .work-icon{
   transform: translateX(.25rem);
 }
 
@@ -686,6 +689,7 @@ purple: hsl(174, 63%, 62%) */
 }
 
 /* TESTIMONIAL SECTION STYLING */
+
 .testimonial-card{
   background-color: var(--container-color);
   padding: 1.25rem 1.5rem;
@@ -704,7 +708,8 @@ purple: hsl(174, 63%, 62%) */
   margin-bottom: .25rem;
 
 }
-.testimonial-description{
+.testimonial-info{
   font-size: var(--small-font-size);
+  color: var(--first-color);
   
 }
