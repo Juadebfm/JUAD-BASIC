@@ -43,7 +43,7 @@ let mixerPortfolio = mixitup(ʻ.work-containerʻ, {
     }
 });
 
-
+// ACTIVE LINK
 const linkWork = document.querySelectorAll(ʻ.work-itemʻ)
 
 function activeWork(){
@@ -52,3 +52,17 @@ function activeWork(){
 }
 
 linkWork.forEach(L=> l.addEventListener(ʻclickʻ, activeWork))
+
+
+// SWIPER PAGINATION
+
+let swiperTestimonial = new Swiper(".testimonial-container", {
+    spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
