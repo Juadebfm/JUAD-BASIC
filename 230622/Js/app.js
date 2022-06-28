@@ -66,4 +66,15 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
       el: ".swiper-pagination",
       clickable: true,
     },
+
+    // RESPONSIVE BERAKPOINTS FOR SWIPER
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+        },
+    },
   });
