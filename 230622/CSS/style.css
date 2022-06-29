@@ -992,11 +992,23 @@ body.light-theme{
 }
 
 .light-theme::-webkit-scrollbar{
-  background-color: 0 2px 8px hsla(var(--final-hue), 8%, 66%);
+  box-shadow: 0 2px 8px hsla(var(--final-hue), 8%, 66%);
 }
 
 .light-theme::-webkit-scrollbar-button{
-  background-color: 0 2px 8px hsla(var(--final-hue), 8%, 54%);
+  box-shadow: 0 2px 8px hsla(var(--final-hue), 8%, 54%);
 
 }
 
+.light-theme .contact-card-title{
+  color: var(--title-color);
+}
+
+.light-theme .contact-form-tag{
+  color: var(--title-color);
+}
+
+.light-theme .contact-button{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
