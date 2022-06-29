@@ -1098,4 +1098,147 @@ body.light-theme{
     width: 500px;
     padding: 4.5rem 2.5rem 2.5rem;
   }
+
+  .services-mod-inf{
+    padding: 0 3.5rem;  
+  }
+
+  .work-container{
+    justify-content: center;
+  }
+
+  .work-img{
+    width: 259px;
+  }
+
+  .contact-info{
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+
+  .contact-form{
+    width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .work-container{
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .contact-container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+/* LARGE DEVICES */
+@media screen and (min-width: 992px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section{
+    padding: 6.5rem 0 1rem;
+  }
+
+  .section-title{
+    margin-bottom: 3.5rem;
+  }
+
+  .nav{
+    height: calc(var(--header-height));
+  }
+
+  .home-handle{
+    width: 290px;
+    height: 400px;
+  }
+
+  .home-img{
+    width: 220px;
+  }
+  .home-social-link{
+    padding: .4rem;
+    font-size: 1.25rem;    
+  }
+  .home-social::after{
+    transform: rotate(90deg) translate(16px, 0);
+  }
+  .home-scroll-icons{
+    font-size: 2rem;
+  }
+
+  .about-container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+  }
+  .about-image{
+    width: 350px;
+  }
+  .about-content{
+    text-align: initial;
+  }
+  .about-info{
+    justify-content: initial;
+  }
+  .about-box{
+    text-align: center;
+    padding: 1rem 1.25rem;
+  }
+  .about-description{
+    padding: 0 4rem 0 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .skills-container{
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 3rem;
+  }
+  
+  .services-container{
+    grid-template-columns: repeat(3, 192px);
+    justify-content: center;
+    column-gap: 3rem;
+  }
+  .services-card{
+    padding: 5rem 2rem 1.5rem;
+  }
+
+  .services-card:nth-child(3){
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-container{
+    gap: 3rem;
+  }
+   .work-card{
+    padding: 1.25rem;
+   }
+   .work-img{
+    margin-bottom: 1rem;
+   }
+   .work-title{
+    margin-bottom: 1rem;
+   }
+   .testimonial-container{
+    width: 750px;
+   }
+   .testimonial-card{
+    padding: 1.5rem 2rem ;
+   }
+   .contact-container{
+    column-gap: 6rem;
+   }
+   .footer-social{
+    font-size: 1.25rem;
+    padding: .4rem;
+    border-radius: .25rem;
+   }
 }
