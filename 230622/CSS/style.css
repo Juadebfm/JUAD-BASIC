@@ -1128,11 +1128,11 @@ body.light-theme{
 }
 
 .light-theme .animate-button{
-  background-color: var(--first-color);
+  background-color: black;
 }
 
 .light-theme .contact-form-entry{
-  background-color: var(--first-color);
+  background-color: white;
 }
 
 /* STYLING FOR DIFFERENT SCREEN SIZES */
@@ -1189,7 +1189,7 @@ body.light-theme{
 @media screen and (min-width: 414px){
   .animate-button{
     background-color: var(--third-button-color);
-    width: 38%;
+    width: 42%;
  } 
 
  .contact-form-submit:hover .contact-form-submit:active {
