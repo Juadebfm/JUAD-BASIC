@@ -142,3 +142,8 @@ const sr = ScrollReveal({
     delay: 400,
     // reset: true
 })
+
+sr.reveal('.home-content')
+sr.reveal('.home-handle', {delay: 700})
+sr.reveal('.home-social, .home-scroll', {delay: 900, origin: 'bottom'})
+sr.reveal('.nav-menu', {delay: 900})
