@@ -636,36 +636,25 @@ purple: hsl(174, 63%, 62%) */
 /* WORK PAGE STYLING */
 
 .work-container{
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
-.work-filters{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: .75rem;
-  margin-bottom: 2rem;
-}
-
-.work-item{
-  cursor: pointer;
-  color: var(--title-color);
-  padding: .25rem .75rem;
-  font-weight: var(--font-medium);
-  border-radius: .5rem;
-}
 
 .work-card{
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .work-img{
   border-radius: 1rem;
   margin-bottom: .75rem;
-  height: 350px;
-  width: 400px;
-  /* align-items: center; */
+}
+.work-word{
+  display: block;
+  margin-left: 1rem;
 }
 
 .work-title{
