@@ -479,21 +479,17 @@
 
       </div>
       </section>
+
     <!-- WORK SECTION -->
       <section class="work section" id="portfolio">
         <span class="section-subtitle">My Portfolio</span>
         <h2 class="section-title">Recent Works</h2>
 
-        <div class="work-filters">
-            <span class="work-item active-work" data-filter=ʻallʻ >All</span>
-            <span class="work-item" data-filter=ʻ.webʻ>Web</span>
-            <span class="work-item" data-filter=ʻ.movilʻ>Movil</span>
-            <span class="work-item" data-filter=ʻ.designʻ>Design</span>
-        </div>
+        
+        <div class="work-container container swiper">
+            <div class="swiper-wrapper">
 
-        <div class="work-container container grid">
-
-            <div class="work-card mix web">
+            <div class="work-card web swiper-slide">
                 <img src="/230622/img/new1.png" alt="" class="work-img">
 
                 <h3 class="work-title">Web Design</h3>
@@ -503,7 +499,7 @@
                 </a>
             </div>
 
-            <div class="work-card mix movil">
+            <div class="work-card appdev swiper-slide">
                 <img src="/230622/img/new1.png" alt="" class="work-img">
 
                 <h3 class="work-title">App Dev</h3>
@@ -513,36 +509,41 @@
                 </a>
             </div>
 
-            <div class="work-card mix design">
+            <div class="work-card sdesign swiper-slide">
                 <img src="/230622/img/new1.png" alt="" class="work-img">
 
-                <h3 class="work-title">Web Design</h3>
+                <h3 class="work-title">Software Design</h3>
 
                 <a href="#" class="work-button">
                     Demo <i class='bx bxs-right-arrow work-icon'></i>
                 </a>
             </div>
 
-            <div class="work-card mix web">
+            <div class="work-card gamedev swiper-slide">
                 <img src="/230622/img/new1.png" alt="" class="work-img">
 
-                <h3 class="work-title">Software Dev</h3>
+                <h3 class="work-title">Game Dev</h3>
 
                 <a href="#" class="work-button">
                     Demo <i class='bx bxs-right-arrow work-icon'></i>
                 </a>
             </div>
 
-            <div class="work-card mix movil">
+            <div class="work-card mobile-app swiper-slide">
                 <img src="/230622/img/new1.png" alt="" class="work-img">
 
-                <h3 class="work-title">Software Dev</h3>
+                <h3 class="work-title">Mobile App</h3>
 
                 <a href="#" class="work-button">
                     Demo <i class='bx bxs-right-arrow work-icon'></i>
                 </a>
             </div>
-
+          </div>
+          <br>
+          <br>
+          
+          
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 <!-- TESTIMONIALS SECTION -->
@@ -694,7 +695,5 @@
 
 <!-- LINK MAIN JAVASCRIPT FILE HERE-->
 <script src="/230622/Js/app.js"></script>
-<!-- MIXITUP FROM KUNKALABS LINKING BELOW -->
-<script src="/230622/Js/mixitup.min.js"></script>
 </body>
 </html>

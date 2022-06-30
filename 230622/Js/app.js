@@ -32,32 +32,24 @@ modClose.forEach((mc) =>{
     })
 })
 
+// SWIPER PAGINATION FOR WORK
+// let swiperTestimonial = new Swiper(".work-container", {
+//     spaceBetween: 24,
+//     loop: true,
+//     grabCursor: true,
 
-// MIXITUP SCRIPTING
-
-// var mixerPortfolio = mixitup(ʻ.work-containerʻ, {
-//     selectors: {
-//         target: '.work-card'
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
 //     },
-//     animation: {
-//         duration: 300
-//     }
-// });
 
-// ACTIVE LINK
-// const linkWork = document.querySelectorAll(ʻ.work-itemʻ)
+       
 
-// function activeWork(){
-//     linkWork.forEach(l=> l.classList.remove(ʻactive-workʻ))
-//     this.classList.add(ʻactive-workʻ)
-// }
-
-// linkWork.forEach(l=> l.addEventListener(ʻclick, active-workʻ))
 
 
 // SWIPER PAGINATION
 
-let swiperTestimonial = new Swiper(".testimonial-container", {
+let swiperTestimonial = new Swiper(".testimonial-container, .work-container", {
     spaceBetween: 24,
     loop: true,
     grabCursor: true,
@@ -67,7 +59,7 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
       clickable: true,
     },
 
-    // RESPONSIVE BERAKPOINTS FOR SWIPER
+    // RESPONSIVE BreakPOINTS FOR SWIPER
     breakpoints: {
         576: {
             slidesPerView: 2,
@@ -78,6 +70,36 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
         },
     },
   });
+
+
+//   var mySwiper2 = new Swiper('.swiper-container.shoes', {
+//     // Optional parameters
+//     pagination: '.pag-shoes',
+//     paginationClickable: true,
+//     nextButton: '.swiper-button-next',
+//     prevButton: '.swiper-button-prev',
+//     spaceBetween: 30,
+//     loop: true,
+//     paginationType: "custom",
+//     paginationCustomRender: function(swiper, current, total) {
+//       var names = [];
+//       $(".swiper-wrapper .swiper-slide").each(function(i) {
+//         names.push($(this).data("name"));
+//       });
+//       var text = "<span style='background-color:black;padding:20px;'>";
+//       for (let i = 1; i <= total; i++) {
+//         if (current == i) {
+//           text += "<span style='border-top:1px solid green;margin-right:4px;color:green;padding:10px;'>" + names[i] + "</span>";
+//         } else {
+//           text += "<span style='border-top:1px solid white;margin-right:4px;color:white;padding:10px;'>" + names[i] + "</span>";
+//         }
+  
+//       }
+//       text += "</span>";
+//       return text;
+//     }
+  
+//   });
 
 
 //   SCROLL SECTION WHEN ACTIVE
