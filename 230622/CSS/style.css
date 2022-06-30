@@ -391,6 +391,11 @@ purple: hsl(174, 63%, 62%) */
   transform: rotate(-90deg);
 }
 
+.home-scroll-name:hover{
+ transform: rotate(90deg), scale(1.2);
+  color: gray;
+}
+
 /* BUTTONS STYLE */
 .button{
   display: inline-block;
@@ -1421,15 +1426,22 @@ body.light-theme{
     width: 350px;
   }
   .about-content{
-    text-align: initial;
-  }
+    text-align: left;
+ }
   .about-info{
     justify-content: initial;
-  }
+    margin: auto;
+    margin-bottom: 1rem;
+ }
+
   .about-box{
-    text-align: center;
+    text-align: left;
     padding: 1rem 1.25rem;
-  }
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    column-gap: .75rem;
+    }
   .about-description{
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
@@ -1499,4 +1511,20 @@ body.light-theme{
   .section-subtitle{
     font-size: 1.2rem;
   }
+
+  .about-info{
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  .section-title{
+    margin-bottom: auto;
+  }
+
+  .services-mod-item{
+    margin-left: 10px;
+  }
+  .services-card{
+    padding-top: 25px;
+  }
+ 
 }
