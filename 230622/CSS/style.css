@@ -245,7 +245,7 @@ purple: hsl(174, 63%, 62%) */
   background-color: hsla(var(--final-hue), 32%, 16%, .8);
   width: 90%;
   border-radius: 4rem;
-  padding: 0.3rem 0.3rem;
+  padding: 0.5rem 0.5rem;
   backdrop-filter: blur(10px);
   transition: .4s;/*for light-theme*/
 }
@@ -732,6 +732,7 @@ purple: hsl(174, 63%, 62%) */
 
 
 /* CONTACT STYLE */
+
 .contact-container{
   row-gap: 3rem;
   padding-bottom: 3rem;
@@ -849,6 +850,7 @@ purple: hsl(174, 63%, 62%) */
   background-color: var(--third-button-color);
   width: 43%;
   
+  
 } 
 
 .contact-form-submit{
@@ -856,6 +858,7 @@ purple: hsl(174, 63%, 62%) */
   outline: none;
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
+  /* justify-self: center; */
 }
 
 .contact-form-submit{
@@ -1131,8 +1134,21 @@ body.light-theme{
   font-weight: var(--font-medium);
 }
 
+.light-theme .contact-form-shadow{
+  background-color:var(--first-color) ;
+}
+
+.light-theme .animate-button{
+  background-color: var(--first-color);
+}
+
+.light-theme .contact-form-entry{
+  background-color: var(--first-color);
+}
+
 /* STYLING FOR DIFFERENT SCREEN SIZES */
 /* small devices */
+
 @media screen and (max-width: 320px){
   .nav-menu{
     padding: 1rem 1.5rem;
@@ -1173,6 +1189,40 @@ body.light-theme{
   .work-filters{
     column-gap: .25rem;
   }
+
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 414px){
+  .animate-button{
+    background-color: var(--third-button-color);
+    width: 38%;
+ } 
+
+ .contact-form-submit:hover .contact-form-submit:active {
+  transform: translate(-6px, -6px);
+}
+
+.nav-logo{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.nav-logo-icon{
+  height: 30px;
+  width: 30px;
+}
+.nav-logo-tag{
+  font-size: 1.2rem;
+}
+
 }
 
 /* MEDIUM DEVICES */
@@ -1376,4 +1426,22 @@ body.light-theme{
     padding: .4rem;
     border-radius: .25rem;
    }
+
+
+}
+
+@media screen and (min-width: 1240px){
+  .contact{
+    display: block;
+    /* justify-content: center; */
+    align-items: center; 
+  }
+
+  .contact-title{
+    display: none;
+  }
+
+  .section-subtitle{
+    font-size: 1.2rem;
+  }
 }
