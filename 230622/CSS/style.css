@@ -317,9 +317,9 @@ purple: hsl(174, 63%, 62%) */
 .home-handle{
   justify-self: center;
   width: 190px;
-  height: 293px;
+  height: 250px;
   background: linear-gradient(180deg,
-              hsla(var(--initial-hue), var(--sat), var(--lig), 0.2),
+              hsla(var(--initial-hue), var(--sat), var(--lig), 0.1),
               hsla(var(--initial-hue), var(--sat), var(--lig), 0)
               );
   border-radius: 10rem 10rem 1rem 1rem;
@@ -352,8 +352,8 @@ purple: hsl(174, 63%, 62%) */
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
-  padding: .25rem;
-  border-radius: .25rem;
+  padding: .3rem;
+  border-radius: .5rem;
   display: flex;
   font-size: 1rem;
   transition: .4s;
@@ -362,7 +362,7 @@ purple: hsl(174, 63%, 62%) */
 .home-social-link:hover{
   background-color: var(--first-color);
   color: #fff;
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 
 .home-social::after{
@@ -378,12 +378,14 @@ purple: hsl(174, 63%, 62%) */
   right: -1.5rem;
   bottom: 4rem;
   display: grid;
-  row-gap: 2.25rem;
+  row-gap: 4rem;
   justify-items: center;
-}
+  /* padding: 02rem; */
+  }
 
 .home-scroll-icons{
   font-size: 1.25rem;
+  
 }
 
 .home-scroll-name{
