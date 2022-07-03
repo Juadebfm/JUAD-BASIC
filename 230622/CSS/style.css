@@ -85,7 +85,7 @@ h1,h2,h3{
 
 /* REUSABLE & POPULAR CSS CLASSES */
 .container{
-  max-width: 968px;
+  max-width: 1450px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -331,6 +331,7 @@ purple: hsl(174, 63%, 62%) */
 
 .home-buttons{
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -1145,12 +1146,21 @@ body.light-theme{
 }
 
 /* STYLING FOR DIFFERENT SCREEN SIZES */
-
-
-
-/* small devices */
-
-@media screen and (max-width: 375px){
+/* SMALL DEVICES */
+@media screen and (min-width: 280px){
+  .nav-logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    column-gap: .5rem;
+  }
+  .nav-logo-icon{
+    height: 24px;
+    width: 25px;
+  }
+  .nav-logo-tag{
+    font-size: 1rem;
+  }
     .nav-logo{
       display: flex;
       justify-content: center;
@@ -1217,59 +1227,9 @@ body.light-theme{
   }
 }
 
-/* @media screen and (max-width: 390px){
-  .nav-logo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    column-gap: .5rem;
-  }
-  .nav-logo-icon{
-    height: 24px;
-    width: 25px;
-  }
-  .nav-logo-tag{
-    font-size: 1rem;
-  }
-} */
 
-@media screen and (max-width: 393px){
-  .nav-logo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    column-gap: .5rem;
-  }
-  .nav-logo-icon{
-    height: 24px;
-    width: 25px;
-  }
-  .nav-logo-tag{
-    font-size: 1rem;
-  }
-  .work-img{
-    width: 240px;
-  }
-}
-
-@media screen and (min-width: 280px){
-  .nav-logo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    column-gap: .5rem;
-  }
-  .nav-logo-icon{
-    height: 24px;
-    width: 25px;
-  }
-  .nav-logo-tag{
-    font-size: 1rem;
-  }
-  
-}
-
-@media screen and (min-width: 400px){
+/* MEDIUM DEVICES */
+@media screen and (min-width: 481px){
   .animate-button{
     background-color: var(--third-button-color);
     width: 42%;
@@ -1297,11 +1257,6 @@ body.light-theme{
 .work-img{
   width: 240px;
 }
-
-}
-
-/* MEDIUM DEVICES */
-@media screen and (min-width: 576px){
   .nav-menu{
     width: 328px;
     left: 0;
@@ -1358,7 +1313,9 @@ body.light-theme{
   }
 }
 
-@media screen and (min-width: 767px){
+
+/* LARGE DEVICES */
+@media screen and (min-width: 760px){
   .work-container{
     grid-template-columns: repeat(2, max-content);
   }
@@ -1368,10 +1325,6 @@ body.light-theme{
     justify-content: center;
     column-gap: 3rem;
   }
-}
-
-/* LARGE DEVICES */
-@media screen and (min-width: 992px) {
   .container{
     margin-left: auto;
     margin-right: auto;
@@ -1410,9 +1363,6 @@ body.light-theme{
   .nav-logo-tag{
     font-size: 1.2rem;
   }
-
-
-
   .home-handle{
     width: 290px;
     height: 400px;
@@ -1508,11 +1458,16 @@ body.light-theme{
     padding: .4rem;
     border-radius: .25rem;
    }
-
-
-}
-
-@media screen and (min-width: 1240px){
+    
+  .home-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+ 
   .contact{
     display: block;
     /* justify-content: center; */
@@ -1544,8 +1499,17 @@ body.light-theme{
  
 }
 
-@media screen and (min-width: 360px) {
-  .work-img{
-    width: 210px;
-  }
+@media screen and (min-width: 1200){
+ body{
+  margin: 10px 10px;
+ }
+.nav-logo{
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.container{
+  max-width: 900px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 }
