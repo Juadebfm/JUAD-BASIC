@@ -50,7 +50,7 @@ textarea {
 }
 
 body{
-  background-color: var(--body-color);
+  background-color: #264653;
   color: var(--body-color);
 }
 
@@ -953,7 +953,7 @@ purple: hsl(174, 63%, 62%) */
 
 .footer-container{
   padding: 2rem 0 6rem;
-  background-color: var(--first-color);
+  background-color: #22414e;
 }
 
 .footer-title,
