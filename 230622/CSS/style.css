@@ -1324,6 +1324,19 @@ body.light-theme{
 
 /* LARGE DEVICES */
 @media screen and (min-width: 760px){
+  .work-card {
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-img{
+  border-radius: 1rem;
+  /* margin-bottom: .75rem; */
+  width: 80%;
+}
   .work-container{
     grid-template-columns: repeat(2, max-content);
   }
@@ -1508,8 +1521,9 @@ body.light-theme{
 }
 
 @media screen and (min-width: 1000px){
-.container{
-  max-width: 1450px;
+  
+  .container{
+  max-width: 1500px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -1520,4 +1534,5 @@ body.light-theme{
   margin-left: auto;
   margin-right: auto;
 }
+
 }
