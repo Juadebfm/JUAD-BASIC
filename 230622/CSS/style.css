@@ -1,6 +1,4 @@
-/* INITIALIZATION SETTINGS BY JUADEB */
-
-/* Box sizing rules */
+/* ===================================================INITIALIZATION SETTINGS BY JUADEB======================================================== */
 *,
 *::before,
 *::after {
@@ -8,8 +6,11 @@
   padding: 0;
   margin: 0;
 }
-
-/* Remove default margin */
+/* SETTING HTML SCROLLING BEHAVIOR */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* REMOVE DEFAULT MARGIN */
 body,
 h1,
 h2,
@@ -22,20 +23,13 @@ dl,
 dd {
   margin: 0;
 }
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* REMOVE LIST BULLETPOINTS AND STYLING */
 li,
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
+/*BODY TEXT STYLING AND TEXT_LINE HEIGHTS*/
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -49,48 +43,35 @@ textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
-
 body{
   background-color: #14213d;
   color: var(--body-color);
-}
-
-body{
-  /* cursor: pointer; */
   border: none;
   transition: .4s;/*for light-theme*/
 }
-
-/* A elements that don't have a class get default styles */
+/* ANCHOR TAG TEXT_DECORATION */
 a{
   text-decoration-skip-ink: auto;
   text-decoration: none;
 }
-
-/* Make images easier to work with */
+/* INITIALIZE IMAGE AND PICTURES */
 img,
 picture {
   max-width: 100%;
   height: auto;
 
 }
-/* span{
-  display: block;
-} */
-
-/* H element colors */
+/* HEADING ELEMENT STYLING */
 h1,h2,h3{
   color: var(--title-color);
   font-weight: var(--font-semibold);
 }
-
-/* REUSABLE & POPULAR CSS CLASSES */
+/* CSS UTILITY CLASSES */
 .container{
   max-width: 1450px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
-
 /* GRID ELEMENTS */
 .grid{
   display: grid;
@@ -117,14 +98,12 @@ h1,h2,h3{
   color: var(--text-color-alt);
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* REMOVES ANIMATIONS AND SCROLLS FOR USER PREFERENCES */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
    scroll-behavior: auto;
   }
-
-/* Universal settings  */
-
+/* ANIMATION UNIVERSAL SETTINGS  */
   *,
   *::before,
   *::after {
@@ -136,22 +115,15 @@ h1,h2,h3{
 }
 
 
-/* GOOGLE FONTS SOURCE PRO IMPORT */
+/* .............................................................................GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 
 /* VARIABLE DECLARATION */
 :root {
   --header-height: 3.5rem;
 
-/* COLOR VARIABLE DECLARATION */
-/* COLOR MODE HSL */
-/* purple: hsl(250, 66%, 75%)
-blue: hsl(207, 90%, 72%)
-purple: hsl(356, 66%, 75%)
-purple: hsl(174, 63%, 62%) */
-
-
-/* INIT */
+/* COLOR */
+  /* INIT */
 --initial-hue: 250;
 --sat: 66%;
 --lig: 75%;
@@ -169,10 +141,7 @@ purple: hsl(174, 63%, 62%) */
 --first-button-color: hsl(var(--initial-hue), var(--sat), var(--lig));
 --second-button-color: #fff;
 --third-button-color: #000;
-/* FONT STYLE, WEIGHT AND SIZES */
-
-
-/* FONT STYLE */
+/* FONT FAMILY */
 --body-font:'Source Sans Pro', sans-serif;
 
 /* FONT SIZE */
@@ -185,7 +154,6 @@ purple: hsl(174, 63%, 62%) */
 --smaller-font-size: 0.75rem;
 --tiny-font-size: 0.625rem;
 
-
 /* FONT WEIGHT */
 --font-medium:500;
 --font-semibold:600;
@@ -196,23 +164,11 @@ purple: hsl(174, 63%, 62%) */
 --z-modal:1000;
 }
 
-/* RESPONSIVENESS & MEDIA QUERIES */
-@media screen and (min-width: 968px) {
-  :root {
---big-font-size: 2.5rem ;
---h1-font-size: 2.25rem;
---h2-font-size: 1.5rem;
---h3-font-size: 1.25rem;
---normal-font-size:1rem ;
---small-font-size: 0.875rem;
---smaller-font-size: 0.813rem;
-  }
-}
+
+/* ========================================================MAIN MARKUP STYLING STARTS BELOW============================================= */
 
 
-
-/* MAIN MARKUP STYLING STARTS BELOW */
-/* HEADER & NAV */
+/* ................................................................HEADER & NAV........................................................ */
 .header{
   position: fixed;
   top: 0;
@@ -229,17 +185,8 @@ purple: hsl(174, 63%, 62%) */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* display: none; */
 }
-
-/* .nav-logo{
-  color: var(--first-color);
-  font-weight: var(--font-medium);
-  transition: .4s;
-}
-
-.nav-logo:hover{
-  color: var(--first-color-alt);
-} */
 
 .nav-menu{
   position: fixed;
@@ -251,9 +198,6 @@ purple: hsl(174, 63%, 62%) */
   padding: 0.5rem 0.5rem;
   transition: .4s;/*for light-theme*/
 }
-
-
-
 
 .nav-list{
   display: flex;
@@ -276,119 +220,21 @@ purple: hsl(174, 63%, 62%) */
   text-shadow: 0 0 5px black;
 }
 
-
-
 /* HOME ACTIVE LINK */
 .active-link{
   /* background: linear-gradient(180deg,
               hsla(var(--initial-hue), var(--sat), var(--lig), 1),
               hsla(var(--initial-hue), var(--sat), var(--lig), .2)); */
-  box-shadow: 0 0 16px hsla(var(--initial-hue), var(--sat), var(--lig), 1);
+  box-shadow: 0 0 16px hsla(var(--initial-hue), var(--sat), var(--lig), .7);
   color: var(--title-color);
   transition: .3s;
 }
-
-/* body {
-  --top-row-height: 60px;
-
-  margin: 0;
-  margin-top: var(--top-row-height);
-  background: #009578;
-}
-
-.top-row {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--top-row-height);
-  display: flex;
-  background: #333333;
-}
-
-.logo {
-  height: 100%;
-  display: block;
-  box-sizing: border-box;
-  padding: 8px;
-}
-
-.nav-btn {
-  width: var(--top-row-height);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-/* Styling Google Material Icons */
-/* .nav-btn > span {
-  color: #ffffff;
-  font-size: calc(var(--top-row-height) / 2);
-}
-
-.nav {
-  --nav-width: 300px;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--nav-width);
-  height: 100vh;
-  background: black;
-  transform: translateX(calc(-1 * var(--nav-width)));
-  transition: transform 0.25s;
-}
-
-.nav-open {
-  transform: translateX(0);
-}
-
-.nav-link {
-  display: block;
-  font-family: sans-serif;
-  font-size: 24px;
-  padding: 24px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.nav-link:not(:last-child) {
-  border-bottom: 1px solid #222222;
-}
-
-.nav-link:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.nav-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.nav-overlay-open {
-  display: block;
-} */ */
-
-
-
-
-/* HEAD BACK FIX */
+/* SCROLL BEYOND HOMEPAGE */
 .scroll-header{
   box-shadow: 0 4px 4px rgba(80, 79, 79, 0.3);
 }
 
-
-/* HOME SECTION STYLING */
+/* .........................................................HOME SECTION STYLING............................................................ */
 
 .home-container{
   position: relative;
@@ -508,7 +354,7 @@ purple: hsl(174, 63%, 62%) */
   color: gray;
 }
 
-/* BUTTONS STYLE */
+/* ..........................................................UNIVERSAL BUTTONS STYLE..... */
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -517,19 +363,22 @@ purple: hsl(174, 63%, 62%) */
   border-radius: .5rem;
   box-shadow: 2px 3px hsl(357, 16%, 25%);
 }
+
 .button:hover{
   background-color: var(--first-color-alt);
   color: var(--body-color);
   transition: .2s ease-in;
   transform: scale(1.07);
 }
+
 .button-transparent{
   background-color: transparent;
   border: 2px solid var(--first-color);
   color: var(--first-color);
 }
 
-/* ABOUT SECTION STYLING */
+/* .............................................................ABOUT SECTION STYLING........................................................... */
+
 .about-container{
   row-gap: 2.5rem;
 }
@@ -581,7 +430,8 @@ purple: hsl(174, 63%, 62%) */
   margin-bottom: 2rem;
 }
 
-/* SKILLS SECTION MARKUP */
+/* ..............................................................SKILLS SECTION MARKUP.......................................................... */
+
 .skills-container{
   row-gap: 2rem;
   padding-top: 1rem;
@@ -635,7 +485,7 @@ purple: hsl(174, 63%, 62%) */
   color: var(--first-color);
 }
 
-/* SERVICES STYLING */
+/* ...........................................................SERVICES STYLING................................................................. */
 
 .services-container{
   grid-template-columns: repeat(2, 1fr);
@@ -675,7 +525,8 @@ purple: hsl(174, 63%, 62%) */
 }
 
 
-/* SERVICES MOD */
+/* ...........................................................SERVICES SPECIAL MOD (hidden list)............................................... */
+
 .services-mod{
   position: fixed;
   inset: 0;
@@ -746,19 +597,18 @@ purple: hsl(174, 63%, 62%) */
   cursor: pointer;
 }
 
-/* WHEN MOD IS ACTIVE */
+/* SERVICES ACTIVE MOD */
 .active-mod{
   opacity: 1;
   visibility: visible;
 }
 
-/* WORK PAGE STYLING */
+/* .................................................................WORK PAGE STYLING.......................................................... */
 
 .work-container{
   padding: 1rem;
  
 }
-
 
 .work-card{
   background-color: var(--container-color);
@@ -770,7 +620,8 @@ purple: hsl(174, 63%, 62%) */
   align-items: center;
   justify-content: center;
   
-  }
+}
+
 .work-img{
   margin: 20px auto;
 }
@@ -791,6 +642,7 @@ purple: hsl(174, 63%, 62%) */
   display: inline;
 
 }
+
 .work-button{
   width: max-content;
   color: var(--first-color);
@@ -808,13 +660,14 @@ purple: hsl(174, 63%, 62%) */
   font-size: 1rem;
   transition: .4s;
 }
+
 /* WHEN WORK OPTIONS ARE CLICKED */
 .active-work{
   background-color: var(--first-color);
   color: var(--body-color);
 }
 
-/* TESTIMONIAL SECTION STYLING */
+/* ..............................................TESTIMONIAL SECTION STYLING................................................................. */
 
 .testimonial-card{
   background-color: var(--container-color);
@@ -848,7 +701,7 @@ purple: hsl(174, 63%, 62%) */
 }
 
 
-/* CONTACT STYLE */
+/* .....................................................CONTACT SECTION STYLE.................................................................. */
 
 .contact-container{
   row-gap: 3rem;
@@ -893,7 +746,7 @@ purple: hsl(174, 63%, 62%) */
   color: #fff;
 }
 
-/* CONTACT FORM STYLING */
+/* .....CONTACT FORM STYLING */
 .contact-form-container{
   position: relative;
   margin-bottom: 2rem;
@@ -914,7 +767,6 @@ purple: hsl(174, 63%, 62%) */
   z-index: 1;
 }
 
-
 .contact-form-area{
   height: 11rem;
 }
@@ -923,11 +775,6 @@ purple: hsl(174, 63%, 62%) */
   resize: none;
 }
 
-
-
-/* --first-button-color: hsl(var(--initial-hue), var(--sat), var(--lig));
---second-button-color: #fff;
---third-button-color: #000; */
 
 .contact-form-shadow{
   position: absolute;
@@ -966,8 +813,6 @@ purple: hsl(174, 63%, 62%) */
  .animate-button{
   background-color: var(--third-button-color);
   width: 43%;
-
-
 }
 
 .contact-form-submit{
@@ -990,7 +835,6 @@ purple: hsl(174, 63%, 62%) */
   transform: translate(-6px, -6px);
 }
 
-
 .contact-form-entry:focus::placeholder{
   opacity: 0;
   transition: .3s;
@@ -1000,70 +844,8 @@ purple: hsl(174, 63%, 62%) */
   transform: translate(-8px, -8px);
   padding: 28px 18px 18px;
 }
-/* .contact-button{
-  color: var(--first-color);
-  font-size: var(--small-font-size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: .25rem;
-}
 
-.contact-button:hover .contact-button-icon{
-  transform: translateX(.25rem);
-}
-
-.contact-button-icon{
-  font-size: 1rem;
-  transition: .4s;
-}
-
-.contact-form-container{
-  position: relative;
-  margin-bottom: 2rem;
-  height: 4rem;
-}
-
-.contact-form-entry{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--text-color-alt);
-  background: none;
-  color: var(--text-color);
-  outline: none;
-  border-radius: .75rem;
-  z-index: 1;
-}
-
-.contact-form-tag{
-  position: absolute;
-  top: -.75rem;
-  left: 1.25rem;
-  font-size: var(--small-font-size);
-  padding: .25rem;
-  background-color: var(--body-color);
-  z-index: 10;
-  color: #fff;
-}
-
-::placeholder {
-  color: var(--first-color);
-  font-size: 0.75rem;
-  text-transform: capitalize;
- }
-
-.contact-form-area{
-  height: 11rem;
-}
-
-.contact-form-area textarea{
-  resize: none;
-} */
-
-/* footer styling */
+/* ......................................................FOOTER STYLING.................................................................... */
 .footer{
   background-color: var(--first-color);
 
@@ -1120,7 +902,7 @@ purple: hsl(174, 63%, 62%) */
   font-size: var(--smaller-font-size);
 }
 
-/* SCROLL BAR STYLING */
+/* ...............................................SCROLL BAR STYLING...................................................................... */
 ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
@@ -1137,7 +919,7 @@ purple: hsl(174, 63%, 62%) */
 
 }
 
-/* THEME CHANGE */
+/* ...........................................................THEME CHANGE.................................................................. */
 .change-theme{
   font-size: 1.25rem;
   cursor: pointer;
@@ -1151,7 +933,7 @@ purple: hsl(174, 63%, 62%) */
   transition: .3s;
 }
 
-/* THEME CHANGE VARIABLE */
+/* THEME CHANGE COLOR VARIABLES */
 body.light-theme{
   background-color: #737877;
 --title-color:hsl(var(--final-hue), 15%, 15%) ;
@@ -1160,7 +942,7 @@ body.light-theme{
 --container-color:#fff ;
 }
 
-/* COLOR VARIATIONS FOR LIGHT SCREEN */
+/* LIGHT SCREEN SPECIAL STYLING */
 
 .light-theme .scroll-header{
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
@@ -1265,8 +1047,20 @@ body.light-theme{
   background-color: white;
 }
 
-/* STYLING FOR DIFFERENT SCREEN SIZES */
-/* SMALL DEVICES */
+/* ..................................................STYLING FOR DIFFERENT SCREEN SIZES...................................................... */
+/* RESPONSIVENESS & MEDIA QUERIES */
+@media screen and (min-width: 968px) {
+  :root {
+--big-font-size: 2.5rem ;
+--h1-font-size: 2.25rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 1.25rem;
+--normal-font-size:1rem ;
+--small-font-size: 0.875rem;
+--smaller-font-size: 0.813rem;
+  }
+}
+/* **********************************************SMALL DEVICES***********************************************************************8 */
 @media screen and (width: 280){
   
 }
@@ -1351,7 +1145,7 @@ body.light-theme{
 }
 
 
-/* MEDIUM DEVICES */
+/* ***********************************************MEDIUM DEVICES************************************************************************ */
 @media screen and (min-width: 400px){
   .contact-content{
     display: block;
@@ -1442,7 +1236,7 @@ body.light-theme{
 }
 
 
-/* LARGE DEVICES */
+/* *************************************************LARGE DEVICES**************************************************************************** */
 @media screen and (min-width: 760px){
   .work-card {
     background-color: var(--container-color);

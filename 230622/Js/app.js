@@ -1,4 +1,5 @@
-// This script gives the header shadows when scrolling yp and down. The arrow function was used here instead of the usal if else statements. makes the script easier to understand
+// This script gives the header shadows when scrolling yp and down. The arrow function was used here instead of the 
+//usual if else statements. makes the script easier to understand
 
 const scrollHeader = () =>{
     const header = document.getElementById('header')
@@ -32,21 +33,6 @@ modClose.forEach((mc) =>{
     })
 })
 
-// SWIPER PAGINATION FOR WORK
-// let swiperTestimonial = new Swiper(".work-container", {
-//     spaceBetween: 24,
-//     loop: true,
-//     grabCursor: true,
-
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-
-       
-
-
-
 // SWIPER PAGINATION
 
 let swiperTestimonial = new Swiper(".testimonial-container, .work-container", {
@@ -59,7 +45,7 @@ let swiperTestimonial = new Swiper(".testimonial-container, .work-container", {
       clickable: true,
     },
 
-    // RESPONSIVE BreakPOINTS FOR SWIPER
+    // RESPONSIVE BREAKPOINTS FOR SWIPER
     breakpoints: {
         576: {
             slidesPerView: 2,
@@ -70,37 +56,6 @@ let swiperTestimonial = new Swiper(".testimonial-container, .work-container", {
         },
     },
   });
-
-
-//   var mySwiper2 = new Swiper('.swiper-container.shoes', {
-//     // Optional parameters
-//     pagination: '.pag-shoes',
-//     paginationClickable: true,
-//     nextButton: '.swiper-button-next',
-//     prevButton: '.swiper-button-prev',
-//     spaceBetween: 30,
-//     loop: true,
-//     paginationType: "custom",
-//     paginationCustomRender: function(swiper, current, total) {
-//       var names = [];
-//       $(".swiper-wrapper .swiper-slide").each(function(i) {
-//         names.push($(this).data("name"));
-//       });
-//       var text = "<span style='background-color:black;padding:20px;'>";
-//       for (let i = 1; i <= total; i++) {
-//         if (current == i) {
-//           text += "<span style='border-top:1px solid green;margin-right:4px;color:green;padding:10px;'>" + names[i] + "</span>";
-//         } else {
-//           text += "<span style='border-top:1px solid white;margin-right:4px;color:white;padding:10px;'>" + names[i] + "</span>";
-//         }
-  
-//       }
-//       text += "</span>";
-//       return text;
-//     }
-  
-//   });
-
 
 //   SCROLL SECTION WHEN ACTIVE
 
@@ -171,21 +126,3 @@ sr.reveal('.home-social, .home-scroll', {delay: 900, origin: 'bottom'})
 sr.reveal('.nav-menu', {delay: 900})
 
 
-// MENU BUTTON BURGER SCRIPT
-
-// // Setup navigation bar
-// {
-//     const navMenu = document.querySelector(".nav");
-//     const navOverlay = document.querySelector(".nav-overlay");
-//     const navButton = document.querySelector(".nav-btn");
-  
-//     navButton.addEventListener("click", () => {
-//       navMenu.classList.add("nav-open");
-//       navOverlay.classList.add("nav-overlay-open");
-//     });
-  
-//     navOverlay.addEventListener("click", () => {
-//       navMenu.classList.remove("nav-open");
-//       navOverlay.classList.remove("nav-overlay-open");
-//     });
-//   }
