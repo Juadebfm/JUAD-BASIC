@@ -450,27 +450,36 @@ h1,h2,h3{
 }
 
 .skills-box{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  column-gap: 2.5rem;
+  column-gap: 2.5rem; */
+  
+}
+
+.skills-box-a{
+  text-align: center;
+  
 }
 
 .skills-grouping{
-  display: grid;
-  align-content: flex-start;
-  row-gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1.5rem;
 }
 
-.skills-data{
+.skills-data-a{
+  margin: 10px;
   display: flex;
-  column-gap: 1rem;
-
+  align-items: center;
+  justify-content: space-between;
 }
 
 .skill-tool{
-  height: 70px;
+  height: 40px;
+  margin-left: 1rem;
 }
-
 .skill-toolc{
   position: relative;
   left: 50%;
@@ -478,22 +487,26 @@ h1,h2,h3{
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   height: 70px;
+  margin-bottom: 1rem;
 }
 
 .skills .bx-check-shield{
   font-size: 1rem;
+  display: none;
+  margin-right: 10px;
+  margin-left: auto;
   color: var(--first-color);
 }
 
 .skills-name{
-  font: var(--normal-font-size);
+  font: 100px;
   font-weight: var(--font-medium);
   line-height: 18px;
   /* border-radius: 12rem; */
 }
 
 .skills-level{
-  font-size: var(--tiny-font-size);
+  font-size: 10px;
   color: var(--first-color);
 }
 
@@ -538,12 +551,29 @@ h1,h2,h3{
 
 
 /* ...........................................................SERVICES SPECIAL MOD (hidden list)............................................... */
+.services-button{
+  font-size: 20px;
+}
 
+.services-title-b{
+  font-size: var(--normal-font-size);
+  color: var(--text-color-alt);
+  margin-bottom: 1rem;
+}
+
+.services-button:hover{
+  color: #000;
+  font-weight: 900;
+  box-shadow: none;
+}
+.services-container{
+  display: flex;
+}
 .services-mod{
   position: fixed;
   inset: 0;
   background-color: hsla(var(--final-hue), 28%, 16%, .7);
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   display: grid;
   place-items: center;
   visibility: hidden;
@@ -556,7 +586,7 @@ h1,h2,h3{
 
 .services-mod-content{
   position: relative;
-  background-color: var(--body-color);
+  background-color: var(--container-color);
   padding: 4.5rem 1.5rem 2.5rem;
   border-radius: 2rem;
 }
@@ -578,6 +608,7 @@ h1,h2,h3{
   font-size: var(--small-font-size);
   color: var(--first-color);
   margin-bottom: 2rem;
+  margin-left: 0;
 
 }
 .services-mod-list{
@@ -588,7 +619,6 @@ h1,h2,h3{
 .services-mod-item{
   display: flex;
   align-items: flex-start;
-  column-gap: .5rem;
 }
 .services-mod-icon{
   font-size: 1.2rem;
@@ -868,12 +898,13 @@ h1,h2,h3{
 
 .footer-container{
   padding: 2rem 0 6rem;
-  background-color: #14213d;
+  max-width: 100%;
+  background-color: var(--container-color);
 }
 
 .footer-title,
 .footer-link{
-  color: var(--body-color);
+  color: var(--text-color);
 }
 
 .footer-title{
@@ -912,7 +943,7 @@ h1,h2,h3{
 .footer-copy{
   display: block;
   margin-top: 4.5rem;
-  color: var(--container-color);
+  color: var(--first-color);
   text-align: center;
   font-size: var(--smaller-font-size);
 }
