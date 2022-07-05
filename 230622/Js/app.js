@@ -169,3 +169,18 @@ sr.reveal('.home-content')
 sr.reveal('.home-handle', {delay: 700})
 sr.reveal('.home-social, .home-scroll', {delay: 900, origin: 'bottom'})
 sr.reveal('.nav-menu', {delay: 900})
+
+
+// MENU BUTTON BURGER SCRIPT
+
+const menuBtn = document.querySelector('.nav-menu');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true; 
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
+});
