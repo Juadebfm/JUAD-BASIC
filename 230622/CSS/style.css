@@ -1372,6 +1372,31 @@ body {
   font-size: .9rem;
 }
 
+
+.a-button{
+  border: 0;
+  outline: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  /* justify-self: center; */
+}
+
+.a-button{
+  padding: .875rem 1.5rem;
+  color: var(--third-button-color);
+  background-color: var(--first-button-color);
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.a-button:hover{
+  color: var(--first-button-color);
+  background-color: var(--container-color);
+}
+
+
+
+
 .skills-container{
     grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
