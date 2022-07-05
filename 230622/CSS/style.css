@@ -443,7 +443,7 @@ h1,h2,h3{
 
 .skills-title{
   font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  font-weight: 900;
   color: var(--first-color);
   text-align: center;
   margin-bottom: 1.5rem;
@@ -506,7 +506,7 @@ h1,h2,h3{
 }
 
 .skills-level{
-  font-size: 10px;
+  font-size: 13px;
   color: var(--first-color);
 }
 
@@ -527,6 +527,8 @@ h1,h2,h3{
 .services-title{
   font-size: var(--h2-font-size);
   margin-bottom: 2.5rem;
+  text-shadow: 1px 3px 3px #14213d;
+  border: none;
 }
 
 .services-button{
@@ -541,6 +543,7 @@ h1,h2,h3{
 
 .services-button:hover .services-icon{
   transform: translateX(.75rem);
+  color: var(--text-color);
 }
 
 .services-icon{
@@ -653,11 +656,6 @@ h1,h2,h3{
 }
 
 .work-card{
-  background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 2rem;
-  width: 350px;
-  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -665,16 +663,14 @@ h1,h2,h3{
 }
 
 .work-img{
-  margin: 20px auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .work-word{
  font-size: var(--big-font-size);
  text-transform: uppercase;
  font-weight: bolder  ;
-  width: 40%;
- margin-right: 0;
-  
 }
 
 .work-title{
@@ -1487,14 +1483,7 @@ body {
     gap: 3rem;
   }
 
-.work-card{
-    padding: 1.25rem;
-   }
-
-.work-img{
-    margin-bottom: 1rem;
-   }
-   .work-title{
+  .work-title{
     margin-bottom: 1rem;
    }
    .testimonial-container{
