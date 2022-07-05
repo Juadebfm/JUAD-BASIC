@@ -463,7 +463,21 @@ h1,h2,h3{
 
 .skills-data{
   display: flex;
-  column-gap: .5rem;
+  column-gap: 1rem;
+
+}
+
+.skill-tool{
+  height: 70px;
+}
+
+.skill-toolc{
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 70px;
 }
 
 .skills .bx-check-shield{
