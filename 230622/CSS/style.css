@@ -244,13 +244,11 @@ purple: hsl(174, 63%, 62%) */
 .nav-menu{
   position: fixed;
   left: 0px;
-  top: 400px;
+  top: 0px;
   bottom: 1rem;
-  background-color: hsla(var(--final-hue), 32%, 16%, .3);
   width: 100%;
   border-radius: 4rem;
   padding: 0.5rem 0.5rem;
-  backdrop-filter: blur(10px);
   transition: .4s;/*for light-theme*/
 }
 
@@ -259,7 +257,7 @@ purple: hsl(174, 63%, 62%) */
 
 .nav-list{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
@@ -289,6 +287,98 @@ purple: hsl(174, 63%, 62%) */
   color: var(--title-color);
   transition: .3s;
 }
+
+/* body {
+  --top-row-height: 60px;
+
+  margin: 0;
+  margin-top: var(--top-row-height);
+  background: #009578;
+}
+
+.top-row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--top-row-height);
+  display: flex;
+  background: #333333;
+}
+
+.logo {
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.nav-btn {
+  width: var(--top-row-height);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Styling Google Material Icons */
+/* .nav-btn > span {
+  color: #ffffff;
+  font-size: calc(var(--top-row-height) / 2);
+}
+
+.nav {
+  --nav-width: 300px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  background: black;
+  transform: translateX(calc(-1 * var(--nav-width)));
+  transition: transform 0.25s;
+}
+
+.nav-open {
+  transform: translateX(0);
+}
+
+.nav-link {
+  display: block;
+  font-family: sans-serif;
+  font-size: 24px;
+  padding: 24px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-link:not(:last-child) {
+  border-bottom: 1px solid #222222;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-overlay-open {
+  display: block;
+} */ */
+
 
 
 

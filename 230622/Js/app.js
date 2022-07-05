@@ -173,14 +173,19 @@ sr.reveal('.nav-menu', {delay: 900})
 
 // MENU BUTTON BURGER SCRIPT
 
-const menuBtn = document.querySelector('.nav-menu');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true; 
-    } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-    }
-});
+// // Setup navigation bar
+// {
+//     const navMenu = document.querySelector(".nav");
+//     const navOverlay = document.querySelector(".nav-overlay");
+//     const navButton = document.querySelector(".nav-btn");
+  
+//     navButton.addEventListener("click", () => {
+//       navMenu.classList.add("nav-open");
+//       navOverlay.classList.add("nav-overlay-open");
+//     });
+  
+//     navOverlay.addEventListener("click", () => {
+//       navMenu.classList.remove("nav-open");
+//       navOverlay.classList.remove("nav-overlay-open");
+//     });
+//   }
