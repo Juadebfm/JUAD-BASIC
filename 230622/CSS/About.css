@@ -237,6 +237,7 @@ purple: hsl(174, 63%, 62%) */
 }
 .nav-logo:hover{
     transform: scale(1.1);
+    transition: .4s ease-in-out;
 
 }
 
@@ -282,6 +283,8 @@ purple: hsl(174, 63%, 62%) */
 
 .search-box button:hover {
   background: #0a0938;
+  box-shadow: 2px 1px 5px #dbe7e6;
+  transition: .4s ease-out;
 
 }
   
@@ -298,7 +301,7 @@ purple: hsl(174, 63%, 62%) */
   color: #333;
   background-color: white;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 5px 10px;
   margin: 10px;
   display: inline-block;
@@ -438,6 +441,10 @@ purple: hsl(174, 63%, 62%) */
   .footer-link{
     color: var(--body-color);
   }
+
+  .footer-link {
+    font-size: var(--normal-font-size);
+  }
   
   .footer-title{
     text-align: center;
@@ -447,6 +454,7 @@ purple: hsl(174, 63%, 62%) */
   
   .footer-list{
     display: flex;
+    align-items: center;
     justify-content: center;
     column-gap: 1.5rem;
     margin-bottom: 2rem;
@@ -463,13 +471,15 @@ purple: hsl(174, 63%, 62%) */
     color: var(--first-color);
     padding: .25rem;
     border-radius: .25rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: inline-flex;
   }
   
   .footer-social-link:hover{
     transform: scale(1.2);
     transition: .4s ease-in-out;
+    background-color: #dbe7e6;
+    color: #0a0938;
   }
   
   .footer-copy{
