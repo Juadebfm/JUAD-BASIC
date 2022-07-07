@@ -355,7 +355,13 @@ h1,h2,h3{
   border: 2px solid var(--first-color);
   color: var(--first-color);
 }
-
+.button-transparent:hover{
+  width: 20%;
+  background-color: linear-gradient(var(--container-color), ) ;
+  color: #fff;
+  text-transform: uppercase;
+  transition: .5s ease-in-out;
+}
 /* .............................................................ABOUT SECTION STYLING........................................................... */
 
 .about-container{
