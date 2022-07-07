@@ -114,6 +114,7 @@ h1,h2,h3{
   display: block;
   font-size: var(--smaller-font-size);
   color: var(--text-color-alt);
+  text-transform: uppercase;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -247,6 +248,30 @@ purple: hsl(174, 63%, 62%) */
     font-size: 20px;
 }
 
+/* SEARCH BOX */
+.search-box {
+  float: right;
+}
+
+.search-box button {
+  height: 30px;
+  width: 32px;
+  margin-left: 5px;
+  background: LightGrey;
+  font-size: 20px;
+  border: 2px solid var(--first-color);
+  border-radius: 10px;
+}
+  
+.search-box input[type=text] {
+  height: 26px;
+  font-size: 17px;
+  border: 2px solid var(--first-color);
+  border-radius: 10px;
+  padding: 13px 15px;
+  width: 400px;
+  margin-top: 4px 6px;
+}
 
 
 
@@ -289,6 +314,37 @@ purple: hsl(174, 63%, 62%) */
   box-shadow: 0 4px 4px rgba(80, 79, 79, 0.3);
 }
 
+
+/* ABOUT PAGE */
+.about-img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top: 3px solid var(--first-color-alt);
+  border-bottom: 3px solid var(--first-color-alt);
+}
+
+#float-img {
+  width: 40%;
+  height: 400px;
+  border: 5px solid var(--first-color);
+  border-radius: 10px;
+  float: left;
+  margin: 5px 18px;
+}
+
+/* MORE SECTIONS */
+
+.about-agrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.span-col-4{grid-column: span 4 / auto;}
+
+.span-col-3{grid-column: span 3 / auto;}
+
+
 /* TESTIMONIAL SECTION STYLING */
 
 .testimonial-card{
@@ -311,7 +367,7 @@ purple: hsl(174, 63%, 62%) */
   }
   .testimonial-info{
     font-size: var(--small-font-size);
-    color: var(--first-color);
+    color: var(--first-color-alt);
   }
   
   /* PAGINATION BY SNIPER */
@@ -333,6 +389,7 @@ purple: hsl(174, 63%, 62%) */
   .footer-container{
     padding: 2rem 0 6rem;
     background-color: var(--first-color);
+    width: 100%;
   }
   
   .footer-title,
@@ -389,13 +446,15 @@ purple: hsl(174, 63%, 62%) */
   }
 
   .essay-title{
-    font-size: var(--normal-font-size);
-    padding: 0px 20px;
+    font-size: var(--h3-font-size);
+    color: var(--text-color-alt);
+    text-transform: uppercase;
+    padding: 0px 50px;
     text-align: left;
-    color: var(--title-color);
-    text-shadow: 2px 2px #0a0938;
+    text-shadow: 1px .7px 0.1px #0a0938;
   }
-  
+
+ 
   /* SCROLL BAR STYLING */
   ::-webkit-scrollbar{
     width: .6rem;
@@ -429,16 +488,22 @@ purple: hsl(174, 63%, 62%) */
   
   /* THEME CHANGE VARIABLE */
   body.light-theme{
-  --title-color:hsl(var(--final-hue), 15%, 15%) ;
-  --text-color:hsl(var(--final-hue), 8%, 35%)  ;
-  --body-color:#EFF7F6 ;
+  --title-color:#0a0938 ;
+  --text-color:#0a0938  ;
+  --body-color:#dbe7e6 ;
   --container-color:#fff ;
   }
   
   /* COLOR VARIATIONS FOR LIGHT SCREEN */
-  
+  .light-theme .essay{
+    color: hsl(241, 72%, 13%);
+  }
+
+  .light-theme .testimonial-info {
+    color: #0a0938;
+  }
   .light-theme .scroll-header{
-    box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+    box-shadow: #0a0938;
   }.light-theme .nav-menu{
     background-color: hsla(var(--final-hue), 32%, 90%, .8);
   }
@@ -511,7 +576,7 @@ purple: hsl(174, 63%, 62%) */
   }
   
   .light-theme::-webkit-scrollbar-thumb:hover{
-    background-color: 0 2px 8px hsla(var(--final-hue), 8%, 44%);
+    background-color: #0a0938;
   }
   
 
