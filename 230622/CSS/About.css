@@ -254,23 +254,25 @@ purple: hsl(174, 63%, 62%) */
 }
 
 .search-box button {
-  height: 30px;
+  height: 33px;
   width: 32px;
-  margin-left: 5px;
-  background: LightGrey;
+  padding: 1px;
+  margin: 10px 1px;
+  background: var(--first-color);
   font-size: 20px;
   border: 2px solid var(--first-color);
   border-radius: 10px;
 }
   
 .search-box input[type=text] {
+  text-align: center;
   height: 26px;
+  width: 400px;
   font-size: 17px;
   border: 2px solid var(--first-color);
   border-radius: 10px;
-  padding: 13px 15px;
-  width: 400px;
-  margin-top: 4px 6px;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 2px;
 }
 
 
