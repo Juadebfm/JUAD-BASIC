@@ -83,6 +83,86 @@ h1,h2,h3{
   font-weight: var(--font-semibold);
 }
 
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: smooth;
+  }
+
+/* =============================Universal settings================================  */
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* GOOGLE FONTS SOURCE PRO IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+/* VARIABLE DECLARATION */
+:root {
+  --header-height: 3.5rem;
+/* INIT */
+--initial-hue: 250;
+--sat: 66%;
+--lig: 75%;
+--final-hue: 219;
+/* MAIN */
+--first-color:hsl(var(--initial-hue), var(--sat), var(--lig)) ;
+--first-color-alt:hsl(var(--initial-hue), var(--sat), 71%) ;
+--title-color:hsl(var(--final-hue), 15%, 95%) ;
+--text-color:hsl(var(--final-hue), 8%, 75%)  ;
+--text-color-alt:hsl(var(--final-hue), 4%, 55%) ;
+--body-color:hsl(var(--final-hue), 48%, 8%) ;
+--container-color:hsl(var(--final-hue), 32%, 12%) ;
+
+/* SPECIAL ANIMATION BUTTON VARIABLES */
+--first-button-color: hsl(var(--initial-hue), var(--sat), var(--lig));
+--second-button-color: #fff;
+--third-button-color: #000;
+/* FONT STYLE, WEIGHT AND SIZES */
+
+
+/* FONT STYLE */
+--body-font:'Nunito', sans-serif;
+/* FONT SIZE */
+--big-font-size: 1.75rem ;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size:0.938rem ;
+--small-font-size: 0.813rem;
+--smaller-font-size: 0.75rem;
+--tiny-font-size: 0.625rem;
+/* FONT WEIGHT */
+--font-medium:500;
+--font-semibold:600;
+/* Z-INDEX DISPLACEMENT */
+--z-tooltip:10;
+--z-fixed:100;
+--z-modal:1000;
+}
+/* RESPONSIVENESS & MEDIA QUERIES */
+@media screen and (min-width: 968px) {
+  :root {
+--big-font-size: 2.5rem ;
+--h1-font-size: 2.25rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 1.25rem;
+--normal-font-size:1rem ;
+--small-font-size: 0.875rem;
+--smaller-font-size: 0.813rem;
+  }
+}
+
 /* REUSABLE & POPULAR CSS CLASSES */
 
 .container{
@@ -116,85 +196,6 @@ h1,h2,h3{
   font-size: var(--smaller-font-size);
   color: var(--text-color-alt);
   text-transform: uppercase;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: smooth;
-  }
-
-/* =============================Universal settings================================  */
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-
-/* GOOGLE FONTS SOURCE PRO IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
-
-/* VARIABLE DECLARATION */
-:root {
-  --header-height: 3.5rem;
-/* INIT */
---initial-hue: 250;
---sat: 66%;
---lig: 75%;
---final-hue: 219;
-/* MAIN */
---first-color:hsl(var(--initial-hue), var(--sat), var(--lig)) ;
---first-color-alt:hsl(var(--initial-hue), var(--sat), 71%) ;
---title-color:hsl(var(--final-hue), 15%, 95%) ;
---text-color:hsl(var(--final-hue), 8%, 75%)  ;
---text-color-alt:hsl(var(--final-hue), 4%, 55%) ;
---body-color:hsl(var(--final-hue), 48%, 8%) ;
---container-color:hsl(var(--final-hue), 32%, 12%) ;
-
-/* SPECIAL ANIMATION BUTTON VARIABLES */
---first-button-color: hsl(var(--initial-hue), var(--sat), var(--lig));
---second-button-color: #fff;
---third-button-color: #000;
-/* FONT STYLE, WEIGHT AND SIZES */
-
-
-/* FONT STYLE */
---body-font:'Source Sans Pro', sans-serif;
-/* FONT SIZE */
---big-font-size: 1.75rem ;
---h1-font-size: 1.5rem;
---h2-font-size: 1.25rem;
---h3-font-size: 1rem;
---normal-font-size:0.938rem ;
---small-font-size: 0.813rem;
---smaller-font-size: 0.75rem;
---tiny-font-size: 0.625rem;
-/* FONT WEIGHT */
---font-medium:500;
---font-semibold:600;
-/* Z-INDEX DISPLACEMENT */
---z-tooltip:10;
---z-fixed:100;
---z-modal:1000;
-}
-/* RESPONSIVENESS & MEDIA QUERIES */
-@media screen and (min-width: 968px) {
-  :root {
---big-font-size: 2.5rem ;
---h1-font-size: 2.25rem;
---h2-font-size: 1.5rem;
---h3-font-size: 1.25rem;
---normal-font-size:1rem ;
---small-font-size: 0.875rem;
---smaller-font-size: 0.813rem;
-  }
 }
 
 /* ==========================================================================================================================*/
@@ -295,18 +296,18 @@ h1,h2,h3{
   border-radius: .5rem;
   display: flex;
   font-size: 1.2rem;
-  transition: .4s;
+  transition: .3s ease-in-out;
 
-  moz-transition: all 2s ease-in-out;
+  /* moz-transition: all 2s ease-in-out;
   o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
-  webkit-transition: all 2s ease-in-out;
+  webkit-transition: all 2s ease-in-out; */
 }
 
 .home-social-link:hover{
   background-color: var(--first-color);
   color: #fff;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .home-social.active {
@@ -377,7 +378,24 @@ h1,h2,h3{
   box-shadow: 0 4px 4px rgba(65, 64, 64, 0.3);
 }
 
-/* ABOUT SECTION */
+/* =================================ABOUT SECTION */
+
+.grid-io {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  height: 90%;
+}
+.span-col-4{grid-column: span 4 / auto;}
+
+.span-col-3{grid-column: span 3 / auto;}
+
+.hero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+}
+
 .essay{
   color: var(--first-color);
   text-align: justify;
@@ -385,13 +403,26 @@ h1,h2,h3{
   padding: 10px;
 }
 
+.essay-topic {
+  margin: 17px 7px auto;
+  text-align: center;
+}
+
 .essay-title{
   font-size: var(--h3-font-size);
   color: #0a0938;
   text-transform: uppercase;
   padding: 0px 50px;
-  text-align: left;
+  text-align: center;
   text-shadow: 0px 0px 0.1px #0a0938;
+}
+
+#section-tit {
+  margin: 0 10px;
+  text-align: left;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: .2rem;
 }
 
 
@@ -594,11 +625,7 @@ h1,h2,h3{
     box-shadow: 0 2px 8px hsla(var(--final-hue), 48%, 8%, .1);
   }
 
-  .light-theme .skills-content
-  .light-theme .services-card
-  .light-theme .work-card
-  .light-theme .testimonial-card
-  .light-theme .contact-card {
+  .light-theme .testimonial-card {
     box-shadow: 0 2px 8px hsla(var(--final-hue), 48%, 8%, .1);
   }
 
