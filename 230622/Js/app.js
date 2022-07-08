@@ -146,4 +146,15 @@ sr.reveal('.nav-menu', {delay: 900})
 //     }
 // }
 
+//ABOUT ME PAGE
+$(window).scroll(function(){
+    var boxje = $(".home-social").offset().top;
+    var value = 160;
+      if (boxje>value) {
+        $(".home-social-link").css({"display":"none"});
+      } else {
+        $(".home-social-link").css({"display":"flex"});
+      }
+  });
+
 
