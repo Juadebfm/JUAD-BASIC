@@ -980,7 +980,7 @@ h1,h2,h3{
 
 /* THEME CHANGE COLOR VARIABLES */
 body.light-theme{
-  background-color: #737877;
+  background-color: #edf1f1;
 --title-color:hsl(var(--final-hue), 15%, 15%) ;
 --text-color:hsl(var(--final-hue), 8%, 35%)  ;
 --body-color:#EFF7F6 ;

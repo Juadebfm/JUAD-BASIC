@@ -249,6 +249,48 @@ purple: hsl(174, 63%, 62%) */
     font-size: 20px;
 }
 
+.home-social{
+  position: sticky;
+}
+.home-social{
+  top: 5rem;
+  left: 0;
+  margin-left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  column-gap: 1rem;
+
+}
+
+.home-social-icon{
+  color: #0a0938;
+}
+.home-social-link{
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  padding: .3rem;
+  border-radius: .5rem;
+  display: flex;
+  font-size: 2rem;
+  transition: .4s;
+}
+
+.home-social-link:hover{
+  background-color: var(--first-color);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.home-social::after{
+  content: '';
+  width: 32px;
+  height: 5px;
+  background-color: var(--first-color);
+  transform: rotate(180deg) translate(-5px, -15px);
+}
+
 /* SEARCH BOX */
 .search-box {
   /* float: right; */
@@ -287,7 +329,7 @@ purple: hsl(174, 63%, 62%) */
   transition: .4s ease-out;
 
 }
-  
+
 .search-box input[type=text] {
   /* text-align: center;
   height: 26px;
@@ -403,18 +445,18 @@ purple: hsl(174, 63%, 62%) */
     border-radius: 3rem;
     margin-bottom: 1rem;
   }
-  
+
   .testimonial-name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     margin-bottom: .25rem;
-  
+
   }
   .testimonial-info{
     font-size: var(--small-font-size);
     color: var(--first-color-alt);
   }
-  
+
   /* PAGINATION BY SNIPER */
   .swiper-pagination-bullet{
     background-color: var(--text-color-alt);
@@ -422,21 +464,21 @@ purple: hsl(174, 63%, 62%) */
   .swiper-pagination-bullet-active{
     background-color: var(--first-color);
   }
-  
+
 
 
 /* footer styling */
 .footer{
     background-color: var(--first-color);
-  
+
   }
-  
+
   .footer-container{
     padding: 2rem 0 6rem;
     background-color: var(--first-color);
     width: 100%;
   }
-  
+
   .footer-title,
   .footer-link{
     color: var(--body-color);
@@ -445,13 +487,13 @@ purple: hsl(174, 63%, 62%) */
   .footer-link {
     font-size: var(--normal-font-size);
   }
-  
+
   .footer-title{
     text-align: center;
     margin-bottom: 2rem;
-  
+
   }
-  
+
   .footer-list{
     display: flex;
     align-items: center;
@@ -459,13 +501,13 @@ purple: hsl(174, 63%, 62%) */
     column-gap: 1.5rem;
     margin-bottom: 2rem;
   }
-  
+
   .footer-social{
     display: flex;
     justify-content: center;
     column-gap: 1.25rem;
   }
-  
+
   .footer-social-link{
     background-color: var(--body-color);
     color: var(--first-color);
@@ -474,14 +516,14 @@ purple: hsl(174, 63%, 62%) */
     font-size: 1.2rem;
     display: inline-flex;
   }
-  
+
   .footer-social-link:hover{
     transform: scale(1.2);
     transition: .4s ease-in-out;
     background-color: #dbe7e6;
     color: #0a0938;
   }
-  
+
   .footer-copy{
     display: block;
     margin-top: 4.5rem;
@@ -499,37 +541,37 @@ purple: hsl(174, 63%, 62%) */
 
   .essay-title{
     font-size: var(--h3-font-size);
-    color: var(--text-color-alt);
+    color: #0a0938;
     text-transform: uppercase;
     padding: 0px 50px;
     text-align: left;
-    text-shadow: 1px .7px 0.1px #0a0938;
+    text-shadow: 0px 0px 0.1px #0a0938;
   }
 
- 
+
   /* SCROLL BAR STYLING */
   ::-webkit-scrollbar{
     width: .6rem;
     border-radius: .5rem;
     background-color: hsl(var(--final-hue), 8%, 38%);
   }
-  
+
   ::-webkit-scrollbar-thumb{
     background-color: hsl(var(--final-hue), 8%, 26%);
     border-radius: .5rem;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover{
     background-color: hsl(var(--final-hue), 8%, 21%);
-  
+
   }
-  
+
   /* THEME CHANGE */
   .change-theme{
     font-size: 1.25rem;
     cursor: pointer;
     color: var(--first-color);
-  
+
   }
   .change-theme:hover{
     transform: scale(1.1);
@@ -537,15 +579,16 @@ purple: hsl(174, 63%, 62%) */
     color: red;
     transition: .3s;
   }
-  
+
   /* THEME CHANGE VARIABLE */
   body.light-theme{
+    background-color: #edf1f1;
   --title-color:#0a0938 ;
   --text-color:#0a0938  ;
   --body-color:#dbe7e6 ;
   --container-color:#fff ;
   }
-  
+
   /* COLOR VARIATIONS FOR LIGHT SCREEN */
   .light-theme .essay{
     color: hsl(241, 72%, 13%);
@@ -559,42 +602,42 @@ purple: hsl(174, 63%, 62%) */
   }.light-theme .nav-menu{
     background-color: hsla(var(--final-hue), 32%, 90%, .8);
   }
-  
+
   .light-theme .section-subtitle{
     color: var(--text-color);
   }
-  
+
   .light-theme .home-social-link{
     box-shadow: 0 2px 8px hsla(var(--final-hue), 48%, 8%, .1);
   }
-  
+
   .light-theme .home-social::after{
     background-color: var(--title-color);
   }
-  
+
   .light-theme .home-social-link{
     color: var(--title-color);
   }
-  
+
   .light-theme .home-scroll{
     color: var(--title-color);
   }
-  
+
   .light-theme .button
   .light-theme .button:hover
   .light-theme .active-work{
     color: var(--title-color);
   }
-  
+
   .light-theme .footer-social-link{
     color: var(--title-color);
   }
-  
+
   .light-theme .footer-social-link:hover{
     transform: scale(1.2);
     transition: .4s ease-in-out;
   }
-  
+
   .light-theme .footer-title{
     color: var(--title-color);
   }
@@ -605,11 +648,11 @@ purple: hsl(174, 63%, 62%) */
   .light-theme .footer-copy{
     color: var(--title-color);
   }
-  
+
   .light-theme .about-box{
     box-shadow: 0 2px 8px hsla(var(--final-hue), 48%, 8%, .1);
   }
-  
+
   .light-theme .skills-content
   .light-theme .services-card
   .light-theme .work-card
@@ -618,19 +661,19 @@ purple: hsl(174, 63%, 62%) */
   {
     box-shadow: 0 2px 8px hsla(var(--final-hue), 48%, 8%, .1);
   }
-  
+
   .light-theme::-webkit-scrollbar{
     background-color: 0 2px 8px hsla(var(--final-hue), 8%, 66%);
   }
-  
+
   .light-theme::-webkit-scrollbar-thumb{
     background-color: 0 2px 8px hsla(var(--final-hue), 8%, 54%);
   }
-  
+
   .light-theme::-webkit-scrollbar-thumb:hover{
     background-color: #0a0938;
   }
-  
+
 
   /* ABOUT PAGE SCREEN SIZES MEDIA QUERIES */
  /* For mobile devices: 320px to 480px
@@ -639,7 +682,7 @@ purple: hsl(174, 63%, 62%) */
  For desktops: 1025px to 1200px */
 
  @media screen and (min-width: 320px) and (max-width:480px) {
-  
+
  }
  @media screen and (min-width: 481px) and (max-width:768px) {
 
@@ -650,7 +693,7 @@ purple: hsl(174, 63%, 62%) */
     margin-right: auto;
   }
   .footer-container{
-    
+
   }
 
   .section{
@@ -667,5 +710,4 @@ purple: hsl(174, 63%, 62%) */
 
  }
 
-  
- 
+
