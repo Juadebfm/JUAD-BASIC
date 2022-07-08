@@ -398,10 +398,18 @@ h1,h2,h3{
 
 .essay{
   color: var(--first-color);
+  /* letter-spacing: 0.2rem; */
   text-align: justify;
   line-height: 1.8rem;
   padding: 10px;
 }
+
+/* .essay-title-paragragh{
+  color: var(--first-color);
+  text-align: justify;
+  line-height: 1.8rem;
+  padding: 10px;
+} */
 
 .essay-topic {
   margin: 17px 7px auto;
@@ -417,6 +425,15 @@ h1,h2,h3{
   text-shadow: 0px 0px 0.1px #0a0938;
 }
 
+.essay-title-2{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  text-transform: uppercase;
+  padding: 0px 50px;
+  text-align: center;
+  text-shadow: 0px 0px 0.1px #0a0938;
+}
+
 #section-tit {
   margin: 0 10px;
   text-align: left;
@@ -424,6 +441,13 @@ h1,h2,h3{
   text-decoration: underline;
   text-decoration-thickness: .2rem;
 }
+
+.grid-io-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+.span-col-2{grid-column: span 2 / auto;}
 
 
 /* TESTIMONIAL SECTION STYLING */
