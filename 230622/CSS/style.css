@@ -466,6 +466,7 @@ border-radius: 10px;
 .a-button:hover{
   color: var(--first-button-color);
   background-color: var(--container-color);
+  transition: .5s ease-in;
 }
 
 /* ..............................................................SKILLS SECTION MARKUP.......................................................... */
@@ -711,8 +712,7 @@ border-radius: 10px;
 .work-container{
   max-width: 73%;
   border-bottom: 5px solid var(--first-color);
-  border-top: 5px solid var(--first-color);
-  
+  border-top: 5px solid var(--first-color); 
 }
 
 .work-card{
@@ -971,6 +971,9 @@ border-radius: 10px;
   transition: .5s ease-in;
 }
 
+.contact-img {
+width: 100%;
+}
 
 
 /* ......................................................FOOTER STYLING.................................................................... */
@@ -1077,12 +1080,48 @@ body.light-theme{
 
 .light-theme .scroll-header{
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
-}.light-theme .nav-menu{
+}
+
+.light-theme .nav-menu{
   background-color: hsla(var(--final-hue), 32%, 90%, .8);
 }
 
-.light-theme .section-subtitle{
-  color: var(--text-color);
+.light-theme .about-subtitle {
+  color: #212529;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.light-theme .about-description {
+  color: #212529;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+.light-theme .a-button {
+  background-color: #737877;
+}
+
+.light-theme .a-button:hover {
+  background-color: #14213d;
+}
+
+.light-theme .about-title {
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.light-theme .about-icon {
+  color: #212529;
+  text-shadow: none;
+}
+
+.light-theme .section-subtitle {
+  color: #212529;
+}
+
+.light-theme .services-title{
+  color: #212529;
 }
 
 .light-theme .home-social-link{
@@ -1129,6 +1168,11 @@ body.light-theme{
 
 .light-theme .about-box{
   box-shadow: 0 2px 8px hsla(var(--final-hue), 48%, 8%, .1);
+}
+
+.light-theme .work-container{
+  border-bottom: 5px solid #2e2f2f;
+  border-top: 5px solid #2e2f2f; 
 }
 
 .light-theme .skills-content
@@ -1187,7 +1231,14 @@ body.light-theme{
 .light-theme .contact-card-icon,
 .light-theme .contact-card-inf,
 .light-theme .contact-button,
-.light-theme.contact-button-icon {
+.light-theme.contact-button-icon,
+.light-theme .footer-social-link,
+.light-theme .footer-copy,
+.light-theme .footer-social,
+.light-theme .footer-link,
+.light-theme .footer-title,
+.light-theme .testimonial-info 
+{
   color: #212529;
   text-shadow: 0 0 1px var(--first-color);
 }
