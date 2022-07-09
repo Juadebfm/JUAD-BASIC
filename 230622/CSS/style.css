@@ -23,19 +23,24 @@ dl,
 dd {
   margin: 0;
 }
+
 /* REMOVE LIST BULLETPOINTS AND STYLING */
+
 li,
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
+
 /*BODY TEXT STYLING AND TEXT_LINE HEIGHTS*/
+
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   text-shadow: 1px 1px 2px rgb(63, 62, 62);
   line-height: 1.5;
 }
+
 body,
 button,
 input,
@@ -43,36 +48,47 @@ textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
+
 body{
   background-color: #14213d;
   color: var(--body-color);
   border: none;
   transition: .4s;/*for light-theme*/
 }
+
 /* ANCHOR TAG TEXT_DECORATION */
+
 a{
   text-decoration-skip-ink: auto;
   text-decoration: none;
 }
+
 /* INITIALIZE IMAGE AND PICTURES */
+
 img,
 picture {
   max-width: 100%;
   height: auto;
 
 }
+
 /* HEADING ELEMENT STYLING */
+
 h1,h2,h3{
   color: var(--title-color);
   font-weight: var(--font-semibold);
 }
+
 /* CSS UTILITY CLASSES */
+
 .container{
   max-width: 1450px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 /* GRID ELEMENTS */
+
 .grid{
   display: grid;
   gap: 1.2rem;
@@ -195,9 +211,9 @@ h1,h2,h3{
   padding:  .3rem  1rem;
   border-radius: 5rem;
 }
-.nav-menu{
+/* .nav-menu{
   
-}
+} */
 
 /* HOME ACTIVE LINK */
 .active-link{
@@ -232,16 +248,20 @@ h1,h2,h3{
 
 .home-greetings{
   display: block;
+  font-size: var(--normal-font-size);
   color: var(--title-color);
   margin-bottom: 0.25rem;
 }
 .home-education{
   color: var(--text-color);
+  font-size: 1rem;
   margin-bottom: 2.5rem;
 }
 
 .home-name{
   font-size: var(--big-font-size);
+  color: var(--first-color);
+  margin-top: 0;
 }
 
 .home-img{
@@ -298,6 +318,7 @@ h1,h2,h3{
   background-color: var(--first-color);
   color: #fff;
   transform: scale(1.1);
+  transition: .3s ease-in-out;
 }
 
 .home-social::after{
@@ -310,18 +331,23 @@ h1,h2,h3{
 
 .home-scroll{
   color: var(--first-color);
-  right: -1.5rem;
-  bottom: 4rem;
+  right: -3rem;
+  bottom: 8rem;
   display: grid;
   row-gap: 4rem;
   justify-items: center;
   /* padding: 02rem; */
   }
 
-.home-scroll-icons{
-  font-size: 1.25rem;
-  
-}
+  /* .home-scroll::after{
+    color: var(--first-color);
+    right: -1.5rem;
+    bottom: 8rem;
+    display: grid;
+    row-gap: 4rem;
+    justify-items: center;
+  } */
+
 
 .home-scroll-name{
   font-size: var(--smaller-font-size);
@@ -329,8 +355,9 @@ h1,h2,h3{
 }
 
 .home-scroll-name:hover{
- transform: rotate(90deg), scale(1.2);
-  color: gray;
+ transform: rotate(90deg) scale(1.2);
+ color: #fff;
+ transition: .8s ease-in-out;
 }
 
 /* ..........................................................UNIVERSAL BUTTONS STYLE..... */
@@ -528,6 +555,9 @@ h1,h2,h3{
   background-color: var(--container-color);
   padding: 3rem 1.5rem 1.5rem;
   border-radius: 1rem;
+  height: 200px;
+  width: 350px;
+  text-align: center;
 }
 
 .services-title{
@@ -538,18 +568,23 @@ h1,h2,h3{
 }
 
 .services-button{
-  color: var(--first-color);
+  color: #fff;
   font-size: var(--normal-font-size);
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   column-gap: .25rem;
   cursor: pointer;
 }
 
-.services-button:hover .services-icon{
+.services-button:hover {
   transform: translateX(.75rem);
-  color: var(--text-color);
+  color: #fff;
+}
+
+.services-icon:hover {
+  transform: translateX(.75rem);
+  color: #fff;
 }
 
 .services-icon{
@@ -1458,9 +1493,6 @@ body {
   background-color: var(--container-color);
 }
 
-
-
-
 .skills-container{
     grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
@@ -1490,11 +1522,14 @@ body {
     margin-bottom: 1rem;
    }
    .testimonial-container{
-    width: 750px;
+    width: 1000px;
    }
+
    .testimonial-card{
     padding: 1.5rem 2rem ;
+    height: 400px;
    }
+
    .contact-container{
     column-gap: 6rem;
    }

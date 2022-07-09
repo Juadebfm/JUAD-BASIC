@@ -414,6 +414,16 @@ h1,h2,h3{
 .essay-topic {
   margin: 17px 7px auto;
   text-align: center;
+  color: #fff;
+}
+
+.essay-topic-2 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .essay-title{
@@ -690,8 +700,8 @@ h1,h2,h3{
     margin-right: auto;
   }
  }
- @media screen and (min-width: 1025px){
+ /* @media screen and (min-width: 1025px){
 
- }
+ } */
 
 
