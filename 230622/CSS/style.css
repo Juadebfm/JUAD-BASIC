@@ -1116,11 +1116,35 @@ body.light-theme{
   text-shadow: none;
 }
 
-.light-theme .section-subtitle {
+.light-theme .services-title {
+  color: #212529;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.light-theme .services-title-b {
+  color: #212529;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.light-theme .services-button {
+  color: #212529;
+  text-shadow: none;
+  font-weight: 600;
+} 
+
+.light-theme .services-button:hover {
+  color: #14213d;
+  text-shadow: 0 0 1px #2e2f2f;
+  font-weight: 600;
+} 
+
+.light-theme .skills-level {
   color: #212529;
 }
 
-.light-theme .services-title{
+.light-theme .skills-title {
   color: #212529;
 }
 
