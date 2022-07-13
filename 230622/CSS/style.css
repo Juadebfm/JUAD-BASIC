@@ -215,9 +215,7 @@ h1,h2,h3{
   padding:  .3rem  1rem;
   border-radius: 5rem;
 }
-/* .nav-menu{
-  
-} */
+
 
 /* HOME ACTIVE LINK */
 .active-link{
@@ -1443,6 +1441,7 @@ body.light-theme{
 .contact-content {
   width: 260px;
 }
+
 .contact-form {
   width: 260px;
 }
@@ -1599,6 +1598,53 @@ body.light-theme{
   }
 }
 
+@media screen and (min-width: 540px) {
+  .contact-form {
+    width: 260px;
+  }
+
+  .contact-card {
+    width: 250px;
+    margin-right:auto;
+    margin-left: auto;
+  }
+
+  .contact-content {
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+    margin: auto 10px;
+  }
+
+  .services-card {
+    width: 400px;
+  }
+
+  .skills-content {
+    width: 400px;
+  }
+
+  .skill-tool{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-description {
+    margin: auto 10px;
+  }
+
+  /* .home-scroll-name {
+    display: block;
+  } */
+
+/* .nav-logo-icon {
+  font-size: 10px;
+}
+.nav-logo-tag {
+  color: #dee2e6;
+} */
+}
+
 
 
 /* *************************************************LARGE DEVICES**************************************************************************** */
@@ -1652,10 +1698,10 @@ body {
 .section-title{
     margin-bottom: 3.5rem;
   }
-
+/* 
 .nav{
     height: calc(var(--header-height));
-  }
+  } */
 
 .nav-logo{
     display: flex;
